@@ -26,4 +26,10 @@ const Footer = ({
     }
   </div>;
 
+Footer.propTypes = {
+  activeCount: PropTypes.number.isRequired,
+  completedCount: PropTypes.number.isRequired,
+  clearCompleted: PropTypes.func.isRequired
+};
+
 export default Footer;

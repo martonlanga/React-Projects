@@ -1,5 +1,4 @@
 import MainSection from '../components/MainSection';
-import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as TodoActions from '../actions';

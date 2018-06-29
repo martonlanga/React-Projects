@@ -17,3 +17,9 @@ const MainSection = ({todosCount, completedCount, actions}) =>
   </section>;
 
 export default MainSection;
+
+MainSection.propTypes = {
+  todosCount: PropTypes.number.isRequired,
+  completedCount: PropTypes.number.isRequired,
+  actions: PropTypes.object.isRequired
+};
