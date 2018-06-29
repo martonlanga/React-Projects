@@ -11,6 +11,11 @@ const initialState = [
   {
     id: 0,
     text: 'It works',
+    completed: true
+  },
+  {
+    id: 1,
+    text: 'Heey',
     completed: false
   }
 ];
