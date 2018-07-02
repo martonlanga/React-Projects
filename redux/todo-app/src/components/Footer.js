@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import * as Filters from '../constants/TodoFilters';
+import Filter from  './Filter';
 
 const FILTER_TITLES = {
-  [Filters.SHOW_ALL]: 'ALl',
+  [Filters.SHOW_ALL]: 'All',
   [Filters.SHOW_ACTIVE]: 'Active',
   [Filters.SHOW_COMPLETED]: 'Completed'
 };
@@ -11,18 +12,29 @@ const FILTER_TITLES = {
 const Footer = ({
   activeCount,
   completedCount,
-  clearCompleted
+  clearCompleted,
+  setVisibilityFilter
 }) =>
   <div className='footer'>
     <span className='footer__todos-count'>{activeCount}</span>
-    {/* <div className='footer__visibility'>
-      <button className='footer__visibility--filter'>All</button>
-      <button className='footer__visibility--filter'>Active</button>
-      <button className='footer__visibility--filter'>Completed</button>
-    </div> */}
+    <ul className='footer__filters'>
+      {Object.keys(FILTER_TITLES).map(filter =>
+        <Filter
+          handleClick={() => setVisibilityFilter(filter)}
+          key={filter}
+        >
+          {FILTER_TITLES[filter]}
+        </Filter>
+      )}
+    </ul>
     {
       !!completedCount &&
-        <button className='footer__clear-completed'>Clear completed</button>
+        <button
+          className='footer__clear-completed'
+          onClick={clearCompleted}
+        >
+          Clear completed
+        </button>
     }
   </div>;
 

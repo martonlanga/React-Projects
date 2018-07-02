@@ -2,11 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import TodoTextInput from '../components/TodoTextInput';
-import { addTodo } from '../actions';
+import { addTodo, completeAllTodos } from '../actions';
 
-export const Header = ({addTodo}) => (
+export const Header = ({addTodo, completeAllTodos}) => (
   <header className='header'>
     <h1>TODOS</h1>
+    <button
+      className='toggle-all'
+      onClick={completeAllTodos}
+    />
     <TodoTextInput
       newTodo
       onSave={(text) => {
@@ -20,7 +24,8 @@ export const Header = ({addTodo}) => (
 );
 
 Header.propTypes = {
-  addTodo: PropTypes.func.isRequired
+  addTodo: PropTypes.func.isRequired,
+  completeAllTodos: PropTypes.func.isRequired,
 };
 
-export default connect(null, {addTodo})(Header);
+export default connect(null, {addTodo, completeAllTodos})(Header);

@@ -17,6 +17,8 @@ const getVisibleTodos = state => {
       return state.todos.filter(todo => !todo.completed);
     case SHOW_COMPLETED:
       return state.todos.filter(todo => todo.completed);
+    default:
+      return state;
   }
 };
 

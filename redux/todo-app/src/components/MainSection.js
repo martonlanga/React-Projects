@@ -12,6 +12,7 @@ const MainSection = ({todosCount, completedCount, actions}) =>
           completedCount={completedCount}
           activeCount={todosCount - completedCount}
           clearCompleted={actions.clearCompleted}
+          setVisibilityFilter={actions.setVisibilityFilter}
         />
     }
   </section>;
