@@ -19,7 +19,7 @@ const Header = ({addTodo, completeAllTodos}) => (
           addTodo(text);
         }
       }}
-      placeholder='Learn Redux'
+      placeholder='Heey'
     />
     <UndoRedo />
   </header>

@@ -21,7 +21,11 @@ html {
   font-size: 62.5%; // 1rem = 10px
 
   @media only screen and (max-width: 50em) {
-    font-size: 50%;
+    font-size: 60%;
+  }
+
+  @media only screen and (max-width: 35em) {
+    font-size: 43%;
   }
 }
 
@@ -41,11 +45,11 @@ body {
   color: var(--color-gray);
 
   @media only screen and (max-width: 50em) {
-    min-height: calc(100vh);
+    min-height: 100vh;
   }
 }
 
 
 ::selection {
-
+  background: var(--color-gray-light-1);
 }
