@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import TodoTextInput from '../components/TodoTextInput';
 import ReactSVG from 'react-svg';
+import UndoRedo from '../containers/UndoRedo';
 
 const Header = ({addTodo, completeAllTodos}) => (
   <header className='header'>
@@ -20,18 +21,7 @@ const Header = ({addTodo, completeAllTodos}) => (
       }}
       placeholder='Learn Redux'
     />
-    <div className='header__timetravel'>
-      <button
-        className='button'
-      >
-        <ReactSVG path='../assets/undo.svg' />
-      </button>
-      <button
-        className='button'
-      >
-        <ReactSVG path='../assets/redo.svg' />
-      </button>
-    </div>
+    <UndoRedo />
   </header>
 );
 

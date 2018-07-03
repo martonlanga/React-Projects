@@ -6,6 +6,7 @@ import {
   COMPLETE_ALL_TODOS,
   CLEAR_COMPLETED
 } from '../constants/ActionTypes';
+import undoable, {distinctState} from 'redux-undo';
 
 const initialState = [
   {
@@ -52,4 +53,8 @@ const todos = (state = initialState, action) => {
   }
 };
 
-export default todos;
+const undoableTodos = undoable(todos, {
+  filter: distinctState()
+});
+
+export default undoableTodos;

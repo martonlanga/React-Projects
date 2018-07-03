@@ -12,11 +12,11 @@ import {
 const getVisibleTodos = state => {
   switch (state.visibilityFilter) {
     case SHOW_ALL:
-      return state.todos;
+      return state.todos.present;
     case SHOW_ACTIVE:
-      return state.todos.filter(todo => !todo.completed);
+      return state.todos.present.filter(todo => !todo.completed);
     case SHOW_COMPLETED:
-      return state.todos.filter(todo => todo.completed);
+      return state.todos.present.filter(todo => todo.completed);
     default:
       return state;
   }

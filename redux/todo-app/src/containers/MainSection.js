@@ -4,8 +4,8 @@ import {bindActionCreators} from 'redux';
 import * as TodoActions from '../actions';
 
 const mapStateToProps = (state) => ({
-    todosCount: state.todos.length,
-    completedCount: state.todos.reduce((count, todo) =>
+    todosCount: state.todos.present.length,
+    completedCount: state.todos.present.reduce((count, todo) =>
                       todo.completed ? count + 1 : count,
                       0
                     ),
