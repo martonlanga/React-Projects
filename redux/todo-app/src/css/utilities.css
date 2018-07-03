@@ -1,0 +1,5 @@
+:root {
+  --color-white: #fff; }
+
+.heading-1 {
+  color: var(--color-white); }

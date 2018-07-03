@@ -40,8 +40,9 @@ export default class TodoTextInput extends Component {
     return (
       <input
         className={classnames({
-          edit: this.props.editing,
-          'new-todo': this.props.newTodo
+          'header__input': true,
+          'header__input--edit': this.props.editing,
+          'header__input--new-todo': this.props.newTodo
         }) }
         type='text'
         value={this.state.text}

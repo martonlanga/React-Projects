@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import ReactSVG from 'react-svg';
 
 export default class TodoItem extends React.Component {
   static propTypes = {
@@ -34,30 +36,32 @@ export default class TodoItem extends React.Component {
 
   render() {
     const {todo, completeTodo, deleteTodo} = this.props;
-    let className = todo.completed ? 'todo--completed' : '';
-    className = this.state.editing ? ' todo--editing' : '';
     return (
       <li
-        className={'todo__item ' + className}
+        className={classnames({
+          'main__todo': true,
+          'main__todo--completed': todo.completed,
+          'main__todo--editing': this.state.editing
+        })}
       >
-        <div className='todo__view'>
-          <input
-            className='todo__checkbox'
-            type='checkbox'
-            checked={todo.completed}
-            onChange={() => completeTodo(todo.id)}
-          />
-          <input
-            className='todo__input'
-            value={this.state.value}
-            onChange={(e) => this.onChange(e)}
-            onBlur={this.handleSave}
-          />
-          <button
-            className='todo__destroy'
-            onClick={() => deleteTodo(todo.id)}
-          />
-        </div>
+        <button
+          className='button main__todo--toggle'
+          onClick={() => completeTodo(todo.id)}
+        >
+          <ReactSVG path='../assets/done.svg' />
+        </button>
+        <input
+          className='main__todo--input'
+          value={this.state.value}
+          onChange={(e) => this.onChange(e)}
+          onBlur={this.handleSave}
+        />
+        <button
+          className='button main__todo--delete'
+          onClick={() => deleteTodo(todo.id)}
+        >
+          <ReactSVG path='../assets/clear.svg' />
+        </button>
       </li>
     );
   }

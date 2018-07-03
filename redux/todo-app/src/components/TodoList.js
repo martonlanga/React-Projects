@@ -6,7 +6,7 @@ const TodoList = ({
   filteredTodos,
   actions
 }) =>
-  <ul className='todo__list'>
+  <ul className='main__todo-list'>
     {filteredTodos.map(todo => (
       <TodoItem
         key={todo.id}

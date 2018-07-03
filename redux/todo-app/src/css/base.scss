@@ -1,0 +1,51 @@
+// Declaring variables
+// Using CSS variables, cause SASS variables freeze my pc ¯\_(ツ)_/¯
+:root {
+  --color-white: #fff;
+  --color-almost-white: #FCFCFC;
+  --color-gray-light-1: #E8E8E8;
+  --color-gray-light-2: #949494;
+  --color-gray: #353535;
+}
+
+// Reset Browser settings
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and (max-width: 50em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-image: linear-gradient(
+  to right bottom,
+  var(--color-almost-white),
+  var(--color-gray-light-1));
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  min-height: calc(100vh - 6rem);
+  color: var(--color-gray);
+
+  @media only screen and (max-width: 50em) {
+    min-height: calc(100vh);
+  }
+}
+
+
+::selection {
+
+}

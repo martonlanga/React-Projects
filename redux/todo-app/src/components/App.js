@@ -3,10 +3,11 @@ import Header from '../containers/Header';
 import MainSection from '../containers/MainSection';
 
 const App = () => (
-  <div>
+  <React.Fragment>
+    <h1 className='heading-1'>todos</h1>
     <Header />
     <MainSection />
-  </div>
+  </React.Fragment>
 );
 
 export default App;

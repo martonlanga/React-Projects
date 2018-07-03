@@ -6,15 +6,14 @@ const Filter = ({
   children
 }) =>
   <li
-    className='footer__filter'
+    className='main__footer--filter'
     onClick={handleClick}
   >
     {children}
   </li>;
 
 Filter.propTypes = {
-  handleClick: PropTypes.func.isRequired,
-  children: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired
 };
 
 export default Filter;

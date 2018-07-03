@@ -1,4 +1,4 @@
-import VisibleTodoList from '../components/TodoList';
+import TodoList from '../components/TodoList';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as TodoActions from '../actions';
@@ -30,4 +30,4 @@ const mapDispatchToProps = (dispatch) => ({
   actions: bindActionCreators(TodoActions, dispatch)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(VisibleTodoList);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
