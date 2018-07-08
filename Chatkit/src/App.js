@@ -1,8 +1,7 @@
 import React from 'react';
 
-const instanceLocator = 'v1:us1:a0642fad-e59e-4270-abce-c31ab110c379';
-const testToken = 'https://us1.pusherplatform.io/services/' +
-  'chatkit_token_provider/v1/a0642fad-e59e-4270-abce-c31ab110c379/token';
+const instanceLocator;
+const testToken;
 const username = 'marci';
 const roomId = 10269886;
 
