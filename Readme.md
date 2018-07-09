@@ -1,4 +1,4 @@
-# React Coin | [Demo](http://martonlanga/github,io/reactcoin)
+# React Coin | [Demo](http://martonlanga.github.io/reactcoin)
 
 ![React Coin Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/ReactCoin.gif)
 
@@ -9,7 +9,7 @@
 
 ___
 
-# Hackernews Client | [Demo](http://martonlanga/github,io/hackernews)
+# Hackernews Client | [Demo](http://martonlanga.github.io/hackernews)
 
 ![Hackernews Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/Hackernews.gif)
 
