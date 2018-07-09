@@ -9,13 +9,13 @@ import './index.css';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/reactcoin/'>
       <div>
         <Header />
 
         <Switch>
-          <Route path='/reactcoin/' component={List} exact />
-          <Route path='/reactcoin/currency/:id' component={Detail} exact />
+          <Route path='/' component={List} exact />
+          <Route path='/currency/:id' component={Detail} exact />
           <Route component={NotFound} />
         </Switch>
       </div>
