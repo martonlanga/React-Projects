@@ -1,6 +1,6 @@
 # React Coin | [Demo](http://martonlanga/github,io/reactcoin)
 
-![React Coin Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/ReactCoind.gif)
+![React Coin Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/ReactCoin.gif)
 
 
 ### About
