@@ -19,7 +19,7 @@ const Header = ({addTodo, completeAllTodos}) => (
           addTodo(text);
         }
       }}
-      placeholder='Heey'
+      placeholder='todo'
     />
     <UndoRedo />
   </header>

@@ -11,12 +11,12 @@ import undoable, {distinctState} from 'redux-undo';
 const initialState = [
   {
     id: 0,
-    text: 'Hoo',
+    text: 'Learn React',
     completed: true
   },
   {
     id: 1,
-    text: 'Let\'s go',
+    text: 'Get a job',
     completed: false
   }
 ];

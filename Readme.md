@@ -1,3 +1,18 @@
+# todos | [Demo](http://martonlanga.github.io/todos)
+
+![Todos Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/Todos.gif)
+
+
+### About
+ * React Redux todos app
+ * Add/Edit/Delete todo
+ * Complete all todos
+ * Delete completed todos
+ * Filter
+ * Undo/Redo
+
+___
+
 # React Coin | [Demo](http://martonlanga.github.io/reactcoin)
 
 ![React Coin Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/ReactCoin.gif)
