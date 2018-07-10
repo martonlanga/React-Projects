@@ -2,8 +2,6 @@
 
 ![Todos Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/Todos.gif)
 
-*Currently SVG's are not loading - working on fixing it*
-
 ### About
  * React Redux todos app
  * Add/Edit/Delete todo
