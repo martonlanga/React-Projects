@@ -1,3 +1,7 @@
+# jeans | [Demo](http://martonlanga.github.io/jeans)
+
+# slider | [Demo](http://martonlanga.github.io/slide)
+
 # todos | [Demo](http://martonlanga.github.io/todos)
 
 ![Todos Gif](https://github.com/martonlanga/React-Projects/blob/master/gifs/Todos.gif)
