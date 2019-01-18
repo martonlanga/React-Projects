@@ -1,6 +1,6 @@
 # jeans | [Demo](http://martonlanga.github.io/jeans)
 
-# slider | [Demo](http://martonlanga.github.io/slide)
+# slide | [Demo](http://martonlanga.github.io/slide)
 
 # todos | [Demo](http://martonlanga.github.io/todos)
 
